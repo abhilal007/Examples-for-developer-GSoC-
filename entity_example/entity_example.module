@@ -1,0 +1,19 @@
+<?php
+
+/**
+ *@file
+ *Module file for entity_example.
+ */
+ 
+ /**
+ * @defgroup entity_example Example: entity
+ * @ingroup examples
+ * @{
+ * These examples show basic entity concepts.
+ *
+ * General documentation is available at
+ * @link https://www.drupal.org/docs/8/api/entity-api Entity API handbook page @endlink.
+ *
+ * The several examples here demonstrate basic Entity usage.
+ */
+

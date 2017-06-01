@@ -1,0 +1,7 @@
+entity_example.description:
+  path: '/examples/entity_example'
+  defaults:
+    _controller: '\Drupal\entity_example\Controller\EntityExampleController::description'
+    _title: 'Entity Example'
+  requirements:
+    _permission: 'access content'

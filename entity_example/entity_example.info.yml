@@ -1,0 +1,7 @@
+name: ENTITY Example
+type: module
+description: A simple entity example showing the main steps required to set up your own entity.
+package: Example modules
+core: 8.x
+dependencies:
+  - examples
