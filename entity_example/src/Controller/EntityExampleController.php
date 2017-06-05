@@ -6,14 +6,9 @@ use Drupal\examples\Utility\DescriptionTemplateTrait;
 /**
  * Controller routines for entity example routes.
  */
-class BlockExampleController {
-  use DescriptionTemplateTrait;
+ class EntityExampleController {
 
-  /**
-   * {@inheritdoc}
-   */
-  protected function getModuleName() {
-    return 'entity_example';
-  }
 
+
+}
 }
