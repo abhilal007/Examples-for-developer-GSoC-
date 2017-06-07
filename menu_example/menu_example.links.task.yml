@@ -1,0 +1,9 @@
+examples.menu_example.tabdefault:
+  route_name: examples.menu_example.tabs
+  title: 'Default Primary Tab'
+  parent_id: examples.menu_example.tabs
+
+  examples.menu_example.tabname:
+    route_name: examples.menu_example.tabname
+    title: '{tabname}'
+    parent_id: examples.menu_example.tabs
