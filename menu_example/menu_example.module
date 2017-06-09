@@ -1,0 +1,36 @@
+<?php
+
+use Drupal\menu_link\Entity\MenuLink;
+
+/**
+ * Implements hook_permission().
+ *
+ * Provides a demonstration access string.
+ */
+function menu_example_permission() {
+  return array(
+    'access protected menu example' => array(
+      'title' => t('Access the protected menu example'),
+    ),
+  );
+}
+
+/*
+ * Implements hook_menu_link_presave().
+ */
+function menu_example_menu_link_presave(MenuLink $menu_link) {
+  // Hide the "User account" link for anonymous users.
+  if ($menu_link->machine_name == 'examples.menu_example.title_callbacks') {
+    $menu_link->options['alter'] = TRUE;
+  }
+}
+
+/**
+ * Implements hook_translated_menu_link_alter().
+ */
+function menu_example_translated_menu_link_alter(MenuLink &$menu_link) {
+  if ($menu_link->machine_name == 'examples.menu_example.title_callbacks') {
+    global $user;
+    $menu_link->title = t('Dynamic title: username=@username', array('@username' => $user->name));
+  }
+}

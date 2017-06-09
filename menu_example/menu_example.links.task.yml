@@ -3,7 +3,20 @@ examples.menu_example.tabdefault:
   title: 'Default Primary Tab'
   parent_id: examples.menu_example.tabs
 
-  examples.menu_example.tabname:
-    route_name: examples.menu_example.tabname
-    title: '{tabname}'
-    parent_id: examples.menu_example.tabs
+examples.menu_example.tabOne:
+  route_name: examples.menu_example.tabname
+  title: 'two'
+  parent_id: examples.menu_example.tabs
+  weight: 2
+
+examples.menu_example.tabTwo:
+  route_name: examples.menu_example.tabname
+  title: 'three'
+  parent_id: examples.menu_example.tabs
+  weight: 3
+
+examples.menu_example.tabThree:
+  route_name: examples.menu_example.tabname
+  title: 'four'
+  parent_id: examples.menu_example.tabs
+  weight: 4
